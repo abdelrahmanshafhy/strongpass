@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="This website helps protect yourself and your devices from hacking and cyber-attacks by giving you a strong and secure password." />
+    <meta property="og:title" content="Strongpass: give you a password">
+    <meta property="og:description"
+        content="On our website, it will give you a strong password to protect your institutions">
+    <meta property="og:image" content="img/icon.png">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/icon.png" />
+    <link rel="shortcut" href="img/icon.png" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <title>Feedback-STRONGPASS</title>
+    <script src="https://kit.fontawesome.com/fcef866d3b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <form action="https://formsubmit.co/strngpss@gmail.com" method="POST">
+        <h3>Send your comment</h3>
+        <input type="hidden" name="_subject" value="New Email!">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <textarea id="textarea" name="message" placeholder="write your message" rows="4" cols="37" maxlength="500"
+            onkeyup="charCount()" required></textarea>
+        <input type="hidden" name="_captcha" value="false">
+        <div class="row">
+            <div class="row1">
+                <button type="submit" title="send"><i class="fa-solid fa-paper-plane"></i></button>
+                <div id="del" title="clear"><i class="fa-solid fa-trash-can"></i></div>
+                <div id="textarea_count">0/500 (Max Character 500)</div>
+            </div>
+        </div>
+        <br>
+        <img class="log1" src="img/logo.svg" alt="strongpass logo">
+        <br>
+        <img class="log2" src="img/text logo.svg" alt="strongpass logo">
+    </form>
+
+    <script>
+        function charCount() {
+            var element = document.getElementById('textarea').value.length;
+            document.getElementById('textarea_count').innerHTML = element + "/500 (Max Character 500)";
+            let btn = document.getElementById('del');
+        }
+        var textarea = document.getElementById('textarea');
+        let textarea_count = document.getElementById('textarea_count');
+        let btn = document.getElementById('del');
+        btn.addEventListener("click", function () {
+            textarea.value = '';
+            textarea_count.innerText = '0/500 (Max Character 500)';
+        }, false);
+    </script>
+</body>
+
+</html>
