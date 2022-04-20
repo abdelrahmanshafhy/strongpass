@@ -807,6 +807,7 @@ form .log1 {
     background-size: cover;
     position: relative;
     left: 42%;
+    pointer-events: none;
 }
 
 form .log2 {
@@ -814,6 +815,7 @@ form .log2 {
     background-size: cover;
     position: relative;
     left: 38%;
+    pointer-events: none;
 }
 
 .folog1 {
