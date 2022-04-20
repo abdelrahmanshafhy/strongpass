@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: https://strong-pass.github.io/strongpass/sitemap.xml
